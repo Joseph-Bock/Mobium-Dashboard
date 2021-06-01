@@ -1,0 +1,39 @@
+.Table {
+    overflow-x: scroll;
+}
+
+.Table::-webkit-scrollbar {
+    display: none;
+}
+
+.tableCount {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--mainColor);
+}
+
+.tableCount input, button{
+    border-radius: 5px;
+    height: 40px;
+}
+
+.tableCount input {
+    width: 100px;
+    margin: 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tableCount button {
+    line-height: 40px;
+    width: 40px;
+    font-size: 31px;
+    background: var(--mainColor);
+    color: white;
+}
+
+.tableCount button:hover {
+    filter: brightness(80%);
+}

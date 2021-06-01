@@ -1,0 +1,46 @@
+.property {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--mainColor);
+}
+
+.property:first-of-type {
+    padding-top: unset;
+}
+
+.property:last-of-type {
+    padding-bottom: unset;
+    border: unset;
+}
+
+.panel .lastId {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 20px;
+    font-size: 30px;
+    
+    border: unset;
+}
+
+.name {
+    justify-content: center;
+    padding-top: 0;
+    font-size: 30px;
+}
+
+.property span {
+    font-weight: 400;
+}
+
+.date span {
+    font-weight: 600;
+}

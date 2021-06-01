@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+:root {
+  --mainColor: #892fd8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--mainColor);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  font-size: 50px;
+
+  height: 100px;
+  width: 100vw;
+
+  background: white;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
+header span {
+  font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 1fr minmax(200px, 500px) minmax(200px, 500px) minmax(200px, 500px) 1fr;
+  grid-gap: 50px;
+
+  margin-top: 50px;
+
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
+#endSpace {
+  grid-row: 4;
+  height: 1px;
 }

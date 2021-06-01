@@ -1,24 +1,62 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Table from './components/Table/Table';
+import Panel from './components/Panel/Panel';
+import Counter from './components/Counter/Counter';
+import LastRegister from './components/LastRegister/LastRegister';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <p>MOBIUM<span>.</span></p>
       </header>
-    </div>
+
+      <div id = 'grid'>
+        <Panel>
+          <Counter
+            title = 'Users'
+          />
+        </Panel>
+
+        <Panel>
+          <Counter
+            title = 'Products'
+          />
+        </Panel>
+
+        <Panel>
+          <Counter
+            title = 'Manufacturers'
+          />
+        </Panel>
+
+        <Panel>
+          <LastRegister
+            title = 'Users'
+          />
+        </Panel>
+
+        <Panel>
+          <LastRegister
+            title = 'Products'
+          />
+        </Panel>
+
+        <Panel>
+          <LastRegister
+            title = 'Manufacturers'
+          />
+        </Panel>
+
+        <Panel>
+            <Table>
+            </Table>
+        </Panel>
+
+        <div id = 'endSpace'></div>
+      </div>
+    </>
   );
 }
 

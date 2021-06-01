@@ -1,0 +1,28 @@
+table {
+    width: max-content;
+    border-collapse: collapse;
+}
+
+table, tr, td{
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background: #E6E1EB;
+}
+
+th {
+    padding: 15px;
+    color: white;
+    background: var(--mainColor);
+}
+
+td {
+    font-weight: 400;
+    padding: 15px;
+}
+
+td:first-child {
+    text-align: center;
+    font-weight: 600;
+}

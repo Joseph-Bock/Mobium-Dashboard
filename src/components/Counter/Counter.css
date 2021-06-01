@@ -1,0 +1,40 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+}
+
+.title p {
+    font-size: 25px;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+    width: 100%;
+
+    background-position-y: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/Users.jpg');
+}
+
+.count .fetching {
+    font-size: 20px;
+}
+
+.count p {
+    margin-top: 10px;
+
+    color: white;
+    font-size: 150px;
+    line-height: 100%;
+
+    opacity: 70%;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
